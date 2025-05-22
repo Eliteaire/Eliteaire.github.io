@@ -3,93 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eliteaire | Private Jet Brokerage</title>
+  <title>Eliteaire – Exclusieve Privéjets</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap');
     html {
       scroll-behavior: smooth;
     }
   </style>
-</head>
-<body class="bg-black text-white font-['Roboto']">
-  <!-- Header -->
-  <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md shadow-md">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-['Playfair_Display'] tracking-wide text-gold">Eliteaire</h1>
-      <nav class="space-x-8 text-sm uppercase font-medium">
-        <a href="#jets" class="hover:text-gold transition">Jets</a>
-        <a href="#about" class="hover:text-gold transition">Over ons</a>
-        <a href="#contact" class="hover:text-gold transition">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1588347818054-dff20782956b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
-    <div class="bg-black bg-opacity-70 h-full w-full flex items-center justify-center">
-      <div class="text-center px-4">
-        <h2 class="text-5xl md:text-6xl font-['Playfair_Display'] font-bold text-gold mb-6 tracking-wide">Ervaar Ultieme Luchtvaart</h2>
-        <p class="text-gray-300 text-lg mb-8 max-w-xl mx-auto">Eliteaire biedt exclusieve privéjets voor de meest veeleisende clientèle. Discreet. Snel. Ongekend luxueus.</p>
-        <a href="#jets" class="inline-block bg-gold hover:bg-white hover:text-black transition px-8 py-3 rounded-full text-black font-semibold uppercase text-sm">Bekijk Jets</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Jet Section -->
-  <section id="jets" class="py-24 bg-black">
-    <div class="max-w-7xl mx-auto px-6">
-      <h3 class="text-4xl font-['Playfair_Display'] text-center text-gold mb-16">Onze Vloot</h3>
-      <div class="grid md:grid-cols-3 gap-12">
-        <!-- Jet Card -->
-        <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover">
-          <div class="p-6">
-            <h4 class="text-2xl font-semibold text-white mb-2">Gulfstream G700</h4>
-            <p class="text-gray-400 text-sm mb-4">De langste, ruimste en snelste jet ooit gebouwd. Perfectie voor intercontinentale vluchten.</p>
-            <a href="#" class="block text-center bg-gold text-black font-bold py-2 rounded-full uppercase text-sm hover:bg-white transition">Bekijk Details</a>
-          </div>
-        </div>
-        <!-- Herhaal voor andere jets -->
-        <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1600185365483-cb4c3a59f989?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover">
-          <div class="p-6">
-            <h4 class="text-2xl font-semibold text-white mb-2">Dassault Falcon 8X</h4>
-            <p class="text-gray-400 text-sm mb-4">Ultieme precisie, comfort en bereik in één meesterwerk.</p>
-            <a href="#" class="block text-center bg-gold text-black font-bold py-2 rounded-full uppercase text-sm hover:bg-white transition">Bekijk Details</a>
-          </div>
-        </div>
-        <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
-          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-56 object-cover">
-          <div class="p-6">
-            <h4 class="text-2xl font-semibold text-white mb-2">Embraer Lineage 1000E</h4>
-            <p class="text-gray-400 text-sm mb-4">Ruimtelijk, stijlvol en een zeldzaam icoon in de lucht.</p>
-            <a href="#" class="block text-center bg-gold text-black font-bold py-2 rounded-full uppercase text-sm hover:bg-white transition">Bekijk Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black border-t border-gray-800 py-10 text-gray-500 text-center text-sm">
-    <div class="max-w-6xl mx-auto px-4">
-      <p>&copy; 2025 Eliteaire. Alle rechten voorbehouden.</p>
-      <p class="mt-2">Exclusieve privéjetbemiddeling | Discrete service wereldwijd</p>
-    </div>
-  </footer>
-
-  <!-- Tailwind Custom Colors -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             gold: '#D4AF37',
+            blackdeep: '#0a0a0a',
           },
-        },
-      },
+          borderRadius: {
+            '3xl': '1.5rem',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
     }
   </script>
+</head>
+<body class="bg-blackdeep text-white font-body">
+
+  <!-- Header -->
+  <header class="fixed w-full top-0 bg-blackdeep border-b border-gray-800 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-display text-gold tracking-wide">Eliteaire</h1>
+      <nav class="space-x-6 uppercase text-sm font-semibold text-gray-300">
+        <a href="#jets" class="hover:text-gold">Jets</a>
+        <a href="#contact" class="hover:text-gold">Contact</a>
+        <a href="#afspraak" class="bg-gold text-black px-4 py-2 rounded-3xl hover:bg-white transition">Afspraken</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen bg-cover bg-center flex items-center justify-center pt-24" style="background-image: url('https://images.unsplash.com/photo-1626700057505-7d302d32b41f');">
+    <div class="bg-black/70 w-full h-full flex items-center justify-center text-center px-4">
+      <div>
+        <h2 class="text-5xl md:text-6xl font-display text-gold mb-6">Exclusieve Privéjets. Eliteaire.</h2>
+        <p class="text-gray-300 text-lg max-w-xl mx-auto mb-8">Discretie. Luxe. Kracht. Eliteaire bemiddelt wereldwijd in topklasse jets voor visionairs, ondernemers en iconen.</p>
+        <a href="#jets" class="inline-block bg-gold text-black font-bold px-8 py-3 rounded-full hover:bg-white transition uppercase text-sm">Bekijk Onze Vloot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jets Section -->
+  <section id="jets" class="py-24 px-6 bg-blackdeep">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-4xl font-display text-center text-gold mb-16">Onze Vloot</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Jet Item -->
+        <div class="bg-neutral-900 rounded-3xl overflow-hidden shadow-lg transition hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1600185365483-cb4c3a59f989" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Gulfstream G700</h4>
+            <p class="text-gray-400 text-sm mb-4">Uitzonderlijke reikwijdte en luxe voor intercontinentale vluchten.</p>
+            <a href="#" class="block bg-gold text-black text-center py-2 rounded-full font-medium hover:bg-white transition">Bekijk Details</a>
+          </div>
+        </div>
+        <div class="bg-neutral-900 rounded-3xl overflow-hidden shadow-lg transition hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Bombardier Global 7500</h4>
+            <p class="text-gray-400 text-sm mb-4">Ultieme precisie en comfort in een iconische jet.</p>
+            <a href="#" class="block bg-gold text-black text-center py-2 rounded-full font-medium hover:bg-white transition">Bekijk Details</a>
+          </div>
+        </div>
+        <div class="bg-neutral-900 rounded-3xl overflow-hidden shadow-lg transition hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Dassault Falcon 8X</h4>
+            <p class="text-gray-400 text-sm mb-4">Perfect uitgebalanceerd voor prestige en efficiëntie.</p>
+            <a href="#" class="block bg-gold text-black text-center py-2 rounded-full font-medium hover:bg-white transition">Bekijk Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-neutral-950 text-gray-300">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-display text-gold mb-6">Contact</h3>
+      <p class="mb-4">📍 Amsterdam – 🌍 Wereldwijd actief</p>
+      <p class="mb-4">✉️ info@eliteaire.com</p>
+      <p class="mb-8">📞 +31 6 1234 5678</p>
+      <a href="#afspraak" class="inline-block bg-gold text-black px-6 py-3 rounded-full font-semibold hover:bg-white transition uppercase text-sm">Maak een afspraak</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blackdeep border-t border-gray-800 py-10 text-center text-sm text-gray-500">
+    <p>&copy; 2025 Eliteaire. Alle rechten voorbehouden.</p>
+    <p>Luxury Jet Brokerage</p>
+  </footer>
 </body>
 </html>
