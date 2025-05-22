@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxJet | Privéjets te koop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">✈️ LuxJet</h1>
+      <nav class="space-x-6">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Jets</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Over ons</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-cover bg-center h-[80vh] text-white" style="background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809');">
+    <div class="bg-black bg-opacity-50 h-full flex items-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-4">Stap in de wereld van luxe luchtvaart</h2>
+        <p class="mb-6 text-lg">Exclusieve privéjets voor zakelijke en persoonlijke vluchten.</p>
+        <a href="#jets" class="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-xl shadow-lg text-lg font-semibold">
+          Bekijk Jets
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jet Catalogus -->
+  <section id="jets" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">Onze Luxe Jets</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Jet Item -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" alt="Jet" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Gulfstream G650</h4>
+            <p class="text-gray-600 mb-4">Snelheid en comfort gecombineerd voor topzakenreizigers.</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg w-full transition font-medium">
+              Bekijk Details
+            </button>
+          </div>
+        </div>
+        <!-- Meer jets kunnen hier toegevoegd worden -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600185365483-cb4c3a59f989" alt="Jet" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Bombardier Global 7500</h4>
+            <p class="text-gray-600 mb-4">De ultieme intercontinentale jet, volledig op maat.</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg w-full transition font-medium">
+              Bekijk Details
+            </button>
+          </div>
+        </div>
+        <!-- Enzovoorts... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-16 border-t">
+    <div class="max-w-7xl mx-auto px-6 py-10 text-gray-700 flex flex-col md:flex-row justify-between">
+      <p>&copy; 2025 LuxJet. Alle rechten voorbehouden.</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-blue-600">Privacy</a>
+        <a href="#" class="hover:text-blue-600">Algemene Voorwaarden</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
